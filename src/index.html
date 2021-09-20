@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>LensDashboard</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+
+</head>
+
+<body>
+    <app-root></app-root>
+</body>
+<script src="assets/script/jquery-3.6.0.min.js"></script>
+<script src="assets/script/bootstrap.min.js"></script>
+<script src="assets/script/slick.min.js"></script>
+<script>
+    setTimeout(() => {
+        $('.stories-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+        });
+        $('.brains-slider').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            variableWidth: true
+        });
+    }, 1000);
+</script>
+
+
+</html>
